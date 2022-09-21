@@ -1,0 +1,22 @@
+#body-services {
+    height: 100vh;
+    background-color: map-get($color, "bg" );
+    #main-services {
+        height: 90%;
+        #face-pic {
+            #border-facepic {
+                border: 10px solid map-get($color,"main-text" );
+            }
+        }
+        #article1-services {
+            .icon {
+                font-size: 5em;
+                border-radius: 9px;
+                margin: 0.1em;
+                margin-left: 0;
+                padding: 0.15em;
+                background-color: map-get($color , "second-text");
+        }
+        }
+    }
+}

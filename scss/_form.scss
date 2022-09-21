@@ -1,0 +1,55 @@
+#body-form {
+    background-color: map-get($color, "bg" );
+    height: 100vh;
+    #main-form {
+        height: 90%;
+        #article-form {
+            form .label-style {
+                outline: rgba(0, 0, 0, 0);
+                border-color: rgba(0, 0, 0, 0);
+                transition: 200ms;
+                border: 1px solid map-get($color, "main-text");
+                text-emphasis-color: white;
+                width: 500px;
+                &:focus {
+                    background-color: rgb(244, 244, 244);
+                    border: 3px solid map-get($color, "main-text");
+                }
+            }
+            form .labels-h {
+                color: map-get($color, "main-text");
+            }
+            form .enviar {
+                font-size: 1.1em;
+                font-family: $second-text-font;
+                font-weight: 100;
+
+                color: map-get($color, "main-text");
+                text-decoration: none;
+                border: 1.7px solid map-get($color, "main-text");
+                background: none;
+
+                margin-top: 2em;
+                padding: .40em;
+
+                cursor: pointer;
+                transition: 200ms;
+                &:hover, &:focus {
+                        background-color: map-get($color, "main-text");
+                        color: white;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .label-style {
+        outline: rgba(0, 0, 0, 0);
+        border-color: rgba(0, 0, 0, 0);
+        transition: 200ms;
+        border: 1px solid map-get($color, "main-text" );
+        text-emphasis-color: white;
+        width: 320px;
+    }
+}

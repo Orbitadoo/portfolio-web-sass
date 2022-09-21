@@ -1,0 +1,30 @@
+@import "./var";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* GENERAL */
+h1 {
+    font-family: $main-text-font;
+    color: map-get($color, "main-text");
+}
+
+p {
+    font-family: $second-text-font;
+}
+/*=========================NAVBAR=========================*/
+@import "./navbar";
+/*=========================INDEX=========================*/
+@import "./index";
+/*=========================SERVICES=========================*/
+@import "./services";
+/*=========================PROYECTS=========================*/
+@import "./proyects";
+/*=========================CONTACT=========================*/
+@import "./contact";
+/*=========================MESSAGE=========================*/
+@import "./form";

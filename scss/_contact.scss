@@ -1,0 +1,16 @@
+#body-contacto {
+    background-color: map-get($color, "bg" );
+    height: 100vh;
+    #main-contacto {
+        height: 90%;
+        #article-contacto {
+            .icons-contact {
+                font-size: 3em;
+                color: map-get($color, "main-text" );
+                background-color: map-get($color, "i-social-media");
+                padding: 1em;
+                width: 200px;
+            }
+        }
+    }
+}

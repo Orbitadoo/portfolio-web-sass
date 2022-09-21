@@ -1,0 +1,32 @@
+#body-proyects {
+    height: 100vh;
+    background-color: map-get($color, "bg");
+    #main-proyects {
+        #section-proyects {
+            color: map-get($color, "main-text");
+        }
+        #article-proyects {
+            #anchor {
+                text-decoration: none;
+                color: map-get($color, "main-text" );
+                font-family: $second-text-font;
+                transition: 200ms;
+                &:hover {
+                    color: map-get($color, 'hover-button-text');
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) {
+    .display-none {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px ){
+    .display-none {
+        display: inline;
+    }
+}

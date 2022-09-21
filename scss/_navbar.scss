@@ -1,0 +1,15 @@
+.navbar {
+    font-family: $second-text-font;
+    a { 
+        transition: 300ms;
+        &:hover {
+            font-size: 16.5px;
+            color: rgb(159, 159, 159) !important;
+        }
+    }
+}
+
+.navbar-toggler {
+    background-color: map-get($color, "main-text" ) !important;
+}
+

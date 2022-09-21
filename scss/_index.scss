@@ -1,0 +1,75 @@
+// INDEX
+#body-home {
+    background-image: url(../assets/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin: 0 auto;
+    height: 100vh;
+    #main-home {
+        #section-home {
+            p#main-text {
+                font-family: $second-text-font;
+                color: map-get($color,"main-text");
+            }
+            #btn {
+                color: map-get($color,"main-text");
+                margin-top: 2em;
+                padding: .40rem;
+                background: none;
+                font-size: 1.1em;
+    
+                border: 1.7px solid map-get($color,"main-text");
+                border-radius: 2em;
+    
+                transition: 200ms;
+                cursor: pointer;
+                a {
+                    text-decoration: none;
+                    color: map-get($color,"main-text");
+                    font-family: $second-text-font;
+                    font-weight: 100;
+                }
+                &:hover {
+                    transform: scale(1.1);
+                    background-color: map-get($color, "main-text");
+                    a {
+                        color: map-get($color, "bg" );
+                        font-weight: 600;
+                    }
+                }
+        }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    #body-home {
+        #main-home {
+            #section-home {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                #btn {
+                    width: 25% !important;
+                    font-size: 1rem;
+                    &:hover {
+                        transform: none;
+                    }
+                    
+                    &:focus {
+                        background-color: map-get($color, "main-text");
+                        a {
+                            color: map-get($color, "bg" );
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+            #article-home {
+                display: none;
+            }
+        }
+    }
+}
